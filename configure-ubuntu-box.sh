@@ -19,6 +19,8 @@ sudo apt-get install sublime-text -y
 sudo apt-get install kubuntu-desktop -y
 sudo apt-get install owncloud-client -y
 sudo apt-get install git -y
+sudo apt-get install vim -y
+sudo apt-get install screen -y
 
 # Update everything else, just to be sure
 sudo apt-get upgrade -y
