@@ -22,5 +22,9 @@ sudo apt-get install git -y
 sudo apt-get install vim -y
 sudo apt-get install screen -y
 
-# Update everything else, just to be sure
+# Chrome's repo breaks apt later and it updates by itself anyway, this isn't needed.
+sudo rm -f /etc/apt/sources.list.d/google*
+
+# Update lists, then update everything for good measure.
+sudo apt-get update
 sudo apt-get upgrade -y
