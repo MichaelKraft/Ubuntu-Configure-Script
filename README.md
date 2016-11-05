@@ -5,7 +5,6 @@ Scripts to configure a fresh install of Ubuntu 14.04.
 
 ### Add Repositories for:
 
-* Google Chrome
 * OwnCloud Client
 * Sublime Text 2
 
@@ -16,9 +15,11 @@ Scripts to configure a fresh install of Ubuntu 14.04.
 * Kubuntu Desktop
 * OwnCloud Client
 * Git
+* CIFS-Utils
 
 *More will likely be added down the line.*
 
-## create-links.sh
+### Other
 
-This removes any existing files and links up `.profile`, `.aliases`, as well as ssh and git configs stored in ownCloud account.
+* Adds a link to my devbox
+* Adds me to sudoers
