@@ -16,6 +16,8 @@ Scripts to configure a fresh install of Ubuntu 14.04.
 * OwnCloud Client
 * Git
 * CIFS-Utils
+* Kubuntu Desktop
+* Spotify
 
 *More will likely be added down the line.*
 
