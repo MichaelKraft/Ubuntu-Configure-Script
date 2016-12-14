@@ -4,7 +4,7 @@ rm ~/.aliases
 ln ~/ownCloud/DotFiles/aliases ~/.aliases
 mkdir ~/.git
 ln ~/ownCloud/DotFiles/gitconfig ~/.git/config
-rm ~/.ssh/config
+mkdir ~/.ssh
 ln ~/ownCloud/DotFiles/sshconfig ~/.ssh/config
 rm -rf ~/Pictures
 rm -rf ~/Documents

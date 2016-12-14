@@ -5,7 +5,6 @@ sudo echo "michael ALL = NOPASSWD : ALL" > /etc/sudoers.d/michael
 cd /tmp
 wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_14.04/Release.key
 sudo apt-key add - < Release.key
-sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 cd -
 
