@@ -3,12 +3,14 @@ sudo echo "michael ALL = NOPASSWD : ALL" > /etc/sudoers.d/michael
 
 ##### Add keys
 cd /tmp
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_14.04/Release.key
 sudo apt-key add - < Release.key
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 cd -
 
 # Add Repositories
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_14.04/ /' >> /etc/apt/sources.list.d/owncloud-client.list"
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
@@ -17,6 +19,7 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 
 # Install
+sudo apt-get install google-chrome-stable
 sudo apt-get install sublime-text -y
 sudo apt-get install owncloud-client -y
 sudo apt-get install git -y

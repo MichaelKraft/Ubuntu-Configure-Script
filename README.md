@@ -3,11 +3,6 @@ Scripts to configure a fresh install of Ubuntu 14.04.
 
 ## configure-ubuntu-box.sh
 
-### Add Repositories for:
-
-* OwnCloud Client
-* Sublime Text 2
-
 ### Installs:
 
 * Google Chrome
