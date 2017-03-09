@@ -4,10 +4,6 @@ sudo chown root michael.temp
 sudo chgrp root michael.temp
 sudo mv michael.temp /etc/sudoers.d/michael
 
-##### Add my devbox share
-echo "//genesis.unsc.net/devbox /media/devbox cifs iocharset=utf8,sec=ntlm 0 0" | sudo tee -a /etc/fstab
-sudo mount -a
-
 ##### Add keys
 cd /tmp
 wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_14.04/Release.key
@@ -38,6 +34,10 @@ sudo apt-get install cifs-utils -y
 
 # Chrome's repo breaks apt later and it updates by itself anyway, this isn't needed.
 sudo rm -f /etc/apt/sources.list.d/google*
+
+##### Add my devbox share
+echo "//genesis.unsc.net/devbox /media/devbox cifs iocharset=utf8,sec=ntlm 0 0" | sudo tee -a /etc/fstab
+sudo mount -a
 
 # Update lists, then update everything for good measure and reboot.
 sudo apt-get update
