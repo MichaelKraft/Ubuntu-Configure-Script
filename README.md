@@ -3,6 +3,7 @@ Scripts to configure a fresh install of Ubuntu 14.04.
 
 ### Settings:
 * Adds myself to sudoers.d
+* Adds my internal devbox to fstab
 
 ### Installs:
 
